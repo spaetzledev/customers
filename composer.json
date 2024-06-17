@@ -1,0 +1,33 @@
+{
+    "version": "1.0.0",
+    "name": "spaetzledev/customers",
+    "type": "typo3-cms-extension",
+    "description": "With this extension you can manage customers and kickstart websites for them.",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": "^8.1",
+        "typo3/cms-backend": "^12.4",
+        "typo3/cms-core": "^12.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SpaetzleDev\\Customers\\": "Classes/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/spaetzledev/customers/issues"
+    },
+    "authors": [
+        {
+            "name": "Thomas Geyer",
+            "role": "Developer",
+            "email": "thomas@spaetzle.dev",
+            "homepage": "https://spaetzle.dev/"
+        }
+    ],
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "customers"
+        }
+    }
+}

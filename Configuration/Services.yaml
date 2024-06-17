@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SpaetzleDev\Customers\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+
+  SpaetzleDev\Customers\Command\CreateCustomerCommand:
+    tags:
+      - name: console.command
+        command: 'spaetzle:create-customer'
+        description: 'A command that does nothing and always succeeds.'
